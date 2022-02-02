@@ -1,8 +1,8 @@
 # CoffeeToast
 
-A simple Swift package to add Toast Notifications to your app.
+A simple Swift package to add Toast Notifications to your app. Install with the Swift Package Manager.
 
-This package uses SwiftUI and requires a target of iOS 15.0.
+This package uses SwiftUI and requires a target of iOS 15.0. This means that the package isn't macOS compatible yet. It's planned for a future release.
 
 ## How to Use
 
