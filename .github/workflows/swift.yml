@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build and run tests
-      run: xcodebuild -showdestinations -scheme CoffeeToast
+      run: xcodebuild -showdestinations -scheme CoffeeToast -destination 'platform=iOS Simulator,id=95DFAB6F-4679-4169-A364-A1B70522FC81,OS=15.2,name=Phone 13 Pro'
