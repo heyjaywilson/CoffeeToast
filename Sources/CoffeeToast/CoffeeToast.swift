@@ -6,6 +6,12 @@ public struct CoffeeToast {
     public init() {}
 }
 
+/// Toast notification
+/// - Parameter isShown: The boolean variable that triggers if the notification is shown
+/// - Parameter color: Background color of the notification
+/// - Parameter text: Text the notification is supposed to show
+/// - Parameter duration: How long is the notification supposed to show before dismissing
+/// - Parameter foregroundColor: The color of the text. This is optional and defaults to `Color.white`
 public struct Toast: View {
     @Binding var isShown: Bool
 
