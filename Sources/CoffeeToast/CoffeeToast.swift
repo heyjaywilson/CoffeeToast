@@ -14,7 +14,11 @@ public struct Toast: View {
     var duration: Double
     var foregroundColor: Color
 
-    public init(isShown: Binding<Bool>, color: Color, text: String, duration: Double, foregroundColor: Color = .white) {
+    public init(isShown: Binding<Bool>,
+                color: Color,
+                text: String,
+                duration: Double,
+                foregroundColor: Color = .white) {
         self._isShown = isShown
         self.color = color
         self.text = text

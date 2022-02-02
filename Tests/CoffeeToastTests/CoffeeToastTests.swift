@@ -8,4 +8,9 @@ final class CoffeeToastTests: XCTestCase {
         // results.
         XCTAssertEqual(CoffeeToast().text, "Hello, World!")
     }
+
+    func testToast() throws {
+        let sampleToast = Toast(isShown: Binding.constant(true), color: .red, text: "Error", duration: 2.0)
+        XCTAssertEqual(sampleToast.text, "Error")
+    }
 }
