@@ -1,4 +1,7 @@
 import XCTest
+import SwiftUI
+import Combine
+
 @testable import CoffeeToast
 
 final class CoffeeToastTests: XCTestCase {
