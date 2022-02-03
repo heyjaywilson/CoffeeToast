@@ -1,11 +1,5 @@
 import SwiftUI
 
-public struct CoffeeToast {
-    public var text = "Hello, World!"
-
-    public init() {}
-}
-
 /// Toast notification
 /// - Parameter isShown: The boolean variable that triggers if the notification is shown
 /// - Parameter color: Background color of the notification
