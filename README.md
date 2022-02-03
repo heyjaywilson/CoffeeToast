@@ -8,7 +8,7 @@ This package uses SwiftUI and requires a target of iOS 15.0. This means that the
 
 ## How to Use
 
-Wrap whatever view you want the Toast notifaction to appear in in a ZStack and add Toast as the last view.
+Use the toast view by adding the view which presents the toast, see example below:
 
 ```swift
 import SwiftUI
@@ -16,12 +16,12 @@ import CoffeeToast
 
 struct ContentView: View {
     @State private var toastIsShown = false
+    
     var body: some View {
-        ZStack {
+        Toast("TOAST NOTIFICATION", isShown: $toastIsShown) {
             Button("Toggle Toast") {
-                toastIsShown.toggle()
-            }
-            Toast(isShown: $toastIsShown, color: .red, text: "TOAST NOTIFICATION", duration: 2.0)
+                toastIsShown = true
+            }   
         }
     }
 }
@@ -29,7 +29,8 @@ struct ContentView: View {
 
 ## v1 Configuration options
 
-Background Color
-Text
-Duration
-Foreground Color (AKA Text Color)
+- Background Color  
+- Text  
+- Duration  
+- Foreground Color (AKA Text Color)
+- Content view  
