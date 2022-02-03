@@ -1,12 +1,14 @@
 import SwiftUI
 
-/// Toast notification
-/// - Parameter isShown: The boolean variable that triggers if the notification is shown
-/// - Parameter color: Background color of the notification
-/// - Parameter text: Text the notification is supposed to show
-/// - Parameter duration: How long is the notification supposed to show before dismissing
-/// - Parameter foregroundColor: The color of the text. This is optional and defaults to `Color.white`
-/// - Parameter content: The view which will present the toast
+/** Creates a Toast Notification
+
+  - Parameters:
+   - isShown: The boolean variable that triggers if the notification is shown
+   - text: Text the notification is supposed to show
+   - duration: How long is the notification supposed to show before dismissing
+   - foregroundColor: The color of the text. This is optional and defaults to `Color.white`
+   - backgroundColor: Background color of the notification and defaults to `Color.red`
+*/
 public struct Toast<Content: View>: View {
     @Binding var isShown: Bool
 
