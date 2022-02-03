@@ -7,7 +7,9 @@ import Combine
 final class CoffeeToastTests: XCTestCase {
 
     func testToast() throws {
-        let sampleToast = Toast(isShown: Binding.constant(true), color: .red, text: "Error", duration: 2.0)
+        let sampleToast = Toast("Error", isShown: .constant(true)) {
+            Text("This is my awesome content")
+        }
         XCTAssertEqual(sampleToast.text, "Error")
     }
 }
