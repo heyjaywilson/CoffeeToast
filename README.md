@@ -1,6 +1,6 @@
 # CoffeeToast
 
-[![Swift](https://github.com/maeganwilson/CoffeeToast/actions/workflows/swift.yml/badge.svg)](https://github.com/maeganwilson/CoffeeToast/actions/workflows/swift.yml)
+ ![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/maeganwilson/coffeetoast?include_prereleases) ![Open Issues](https://img.shields.io/github/issues/maeganwilson/coffeetoast) [![Swift](https://github.com/maeganwilson/CoffeeToast/actions/workflows/swift.yml/badge.svg)](https://github.com/maeganwilson/CoffeeToast/actions/workflows/swift.yml)
 
 A simple Swift package to add Toast Notifications to your app. Install with the Swift Package Manager.
 
